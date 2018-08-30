@@ -1,4 +1,4 @@
-# prolucidComPIL
+# ProLuCIDComPIL
 
 
 ### We modified original Prolucid search engine to be compatible to ComPIL metaproteomics data analysis.
