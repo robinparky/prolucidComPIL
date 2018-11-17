@@ -66,10 +66,37 @@ L       [parent protein for peptide match 2]
     * see metaproteomics repository for [build_compil](https://bitbucket.org/sulab/metaproteomics)
     * or see [here](https://hpccloud.scripps.edu/index.php/s/55zVzx1QVaxstqe) for demo databases
 
-**Instructions**
+# Instructions
 
 ----
 
+
+### Configuration Of build_compil:
+
+1. go to build_compil
+2. edit ex/python/multiprocess_JSON_import.py
+    a. Change "HOST" and "PORT" variables to match your mongodb configuration
+
+3. edit create_compil
+    a. Change variable "FASTADB"  so that it is assigned to "${ORIGFASTADB%.*}"_renumbered."${ORIGFASTADB##*.}"
+    b. Change "MONGO_HOST" and "MONGO_PORT" to match your mongodb configuration
+        i. examples
+            * "HOST = localhost"
+            * "PORT = 27017" 
+4. edit blazmass.params
+    a. Change "mongoDB_URI" parameter to match your mongodb configuration
+        i. example: "mongodb://localhost:27017"
+
+
+
+### To upload Fasta file to MongoDB
+
+* create_compil is current located in build_compil
+1. Go to  build_compil
+2. Update the blazmass.params if needed	
+3. run "create_compil path/to/fasta/file database_name collection_name"
+        Example: 
+	        "create_compil ~/testFasta/*.fasta testDB testColl"
 
 *ComPIL/MongoDB integration by [Sandip Chatterjee](http://www.scripps.edu/wolan) & [Greg Stupp](http://sulab.org/)*
 
