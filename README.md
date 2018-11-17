@@ -70,22 +70,21 @@ L       [parent protein for peptide match 2]
 
 ----
 
-
 ### Configuration Of build_compil:
 
 1. go to build_compil
 2. edit ex/python/multiprocess_JSON_import.py
-    a. Change "HOST" and "PORT" variables to match your mongodb configuration
+    * Change "HOST" and "PORT" variables to match your mongodb configuration
 
 3. edit create_compil
-    a. Change variable "FASTADB"  so that it is assigned to "${ORIGFASTADB%.*}"_renumbered."${ORIGFASTADB##*.}"
-    b. Change "MONGO_HOST" and "MONGO_PORT" to match your mongodb configuration
-        i. examples
+    1. Change variable "FASTADB"  so that it is assigned to "${ORIGFASTADB%.*}"_renumbered."${ORIGFASTADB##*.}"
+    2. Change "MONGO_HOST" and "MONGO_PORT" to match your mongodb configuration
+        * Examples
             * "HOST = localhost"
             * "PORT = 27017" 
 4. edit blazmass.params
-    a. Change "mongoDB_URI" parameter to match your mongodb configuration
-        i. example: "mongodb://localhost:27017"
+    * Change "mongoDB_URI" parameter to match your mongodb configuration
+        * Example: "mongodb://localhost:27017"
 
 
 
