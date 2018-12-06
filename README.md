@@ -65,8 +65,7 @@ L       [parent protein for peptide match 2]
     * MongoDB databases can be running locally (`localhost`), remotely as a single node (typically using TCP port 27017), or sharded behind a `mongos` process (typically port 27018)
 * Databases
     * see metaproteomics repository for [build_compil](https://bitbucket.org/sulab/metaproteomics)
-    * or see [here](https://hpccloud.scripps.edu/index.php/s/55zVzx1QVaxstqe) for demo databases
-
+    
 # Instructions
 
 ----
