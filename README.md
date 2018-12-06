@@ -93,9 +93,9 @@ Download [build_compil](https://bitbucket.org/sulab/metaproteomics)
 * create_compil is current located in build_compil
 1. Go to directory where build_compil is installed
 2. Update the blazmass.params if needed	
-3. run "create_compil path/to/fasta/file database_name collection_name"
+3. run "create_compil path/to/fasta/file database_name database_name"
 	* Example: 
-		* "create_compil ~/testFasta/*.fasta testDB testColl"
+		* "create_compil ~/testFasta/*.fasta testDB testDB"
 
 *ComPIL/MongoDB integration by [Sandip Chatterjee](http://www.scripps.edu/wolan) & [Greg Stupp](http://sulab.org/)*
 
@@ -107,7 +107,7 @@ Download sample search.xml [here](http://fields.scripps.edu/prolucid_compil/down
 2. Edit "<mongo_db_name>\[insert database_name]</mongo_db_name>" line and replace \[insert database name] with database name
 	* Example:
 		* <mongo_db_name>testDB</mongo_db_name>
-	* Database name should be the same as the name used in step 3 in "To upload Fasta File to MongoDB" process
+	* Database name should be the same as "database_name" used in step 3 in "To upload Fasta File to MongoDB" process
 3. Edit " <mongo_uri>\[insert database url]</mongo_uri>" and replace \[insert database url] with mongodb url
 	* Example:
 		* <mongo_uri>mongodb://localhost:27017</mongo_uri>
