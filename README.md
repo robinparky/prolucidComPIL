@@ -15,7 +15,7 @@ MS2 files can be generated from instrument RAW files using a tool such as  [RawC
 
 #### Input file format
 
-Blazmass takes an MS2 file as input. MS2 files contain MS/MS precursor ion, charge, and fragment information:
+ProLuCIDComPIL takes an MS2 file as input. MS2 files contain MS/MS precursor ion, charge, and fragment information:
 
 ```
 MS2 Format
@@ -39,7 +39,7 @@ Z       4       3837.89004
 
 #### Output file format
 
-Blazmass outputs search results in the SQT file format, which contains unfiltered proteomic scoring information, including the best scoring peptide matches for each scan, parent proteins for each matched peptide, and other search-related information.
+ProLuCIDComPIL outputs search results in the SQT file format, which contains unfiltered proteomic scoring information, including the best scoring peptide matches for each scan, parent proteins for each matched peptide, and other search-related information.
 
 ```
 SQT Format
@@ -56,7 +56,7 @@ L       [parent protein for peptide match 2]
 ----
 ### Running locally
 
-*tested on CentOS 6, 7, Linux Mint/Ubuntu 15.10*
+*tested on CentOS 7
 
 **Requirements**
 
