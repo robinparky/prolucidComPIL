@@ -10,7 +10,7 @@ MS2 and SQT are plaintext file formats detailed in the following publication:
 
 [McDonald, W. H. et al. MS1, MS2, and SQT-three unified, compact, and easily parsed file formats for the storage of shotgun proteomic spectra and identifications. Rapid Commun. Mass Spectrom. 18, 2162–2168 (2004).](http://dx.doi.org/10.1002/rcm.1603)
 
-MS2 files can be generated from instrument RAW files using a tool such as [RawExtractor](http://fields.scripps.edu/) or [RawConverter](http://fields.scripps.edu/)
+MS2 files can be generated from instrument RAW files using a tool such as  [RawConverter](http://fields.scripps.edu/rawconv/)
 
 #### Input file format
 
