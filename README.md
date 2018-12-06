@@ -71,7 +71,7 @@ L       [parent protein for peptide match 2]
 
 ----
 
-### Configuration Of build_compil:
+### Configuration Of Build_compil:
 Download [build_compil](https://bitbucket.org/sulab/metaproteomics)
 1. go to directory where build_compil is downloaded
 2. edit ex/python/multiprocess_JSON_import.py
@@ -89,7 +89,7 @@ Download [build_compil](https://bitbucket.org/sulab/metaproteomics)
 
 
 
-### To upload Fasta file to MongoDB
+### Upload Fasta file to MongoDB
 * create_compil is current located in build_compil
 1. Go to directory where build_compil is installed
 2. Update the blazmass.params if needed	
@@ -99,7 +99,7 @@ Download [build_compil](https://bitbucket.org/sulab/metaproteomics)
 
 *ComPIL/MongoDB integration by [Sandip Chatterjee](http://www.scripps.edu/wolan) & [Greg Stupp](http://sulab.org/)*
 
-### To Configure Search Parameters
+### Configure Search Parameters
 Download sample search.xml [here](http://fields.scripps.edu/prolucid_compil/download/prolucid_compil.jar).
 1. Edit " <database_name>\[database path]</database_name>" line and replace "[database path]" with path to fasta file
 	* Example:
@@ -107,7 +107,7 @@ Download sample search.xml [here](http://fields.scripps.edu/prolucid_compil/down
 2. Edit "<mongo_db_name>\[insert database_name]</mongo_db_name>" line and replace \[insert database name] with database name
 	* Example:
 		* <mongo_db_name>testDB</mongo_db_name>
-	* Database name should be the same as "database_name" used in step 3 in "To upload Fasta File to MongoDB" process
+	* Database name should be the same as "database_name" used in step 3 in "Upload Fasta File to MongoDB" process
 3. Edit " <mongo_uri>\[insert database url]</mongo_uri>" and replace \[insert database url] with mongodb url
 	* Example:
 		* <mongo_uri>mongodb://localhost:27017</mongo_uri>
@@ -116,7 +116,7 @@ Download sample search.xml [here](http://fields.scripps.edu/prolucid_compil/down
 ### To Run Search
 Download ProLuCIDCompil [here](http://fields.scripps.edu/prolucid_compil/download/prolucid_compil.jar).
 1. Run "java -Xmx10G -jar prolucid_compil.jar example.ms2 search.xml [num_threads]"
-	- search.xml - edit search.xml as described in "To Configure Search Parameters"
+	- search.xml - edit search.xml as described in "Configure Search Parameters"
 	- [num threads] - number of threads to assign to search; in general assigning more threads to search increased performance but increased strain on mongodb server and memory usage on local node. The optimum number of threads assigned per node would heavily depend on node specification, network configuration, and mongodb sharding configuration. For our 8 shard mongodb set up, I assigned 2 threads per node and had no more than 60 threads access the mongodb server.
 	- Example:
 		- java -Xmx10G -jar prolucid_compil.jar example.ms2 search.xml 4
