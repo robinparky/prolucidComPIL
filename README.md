@@ -112,13 +112,16 @@ Download sample search.xml [here](http://fields.scripps.edu/prolucid_compil/down
 		* <mongo_uri>mongodb://localhost:27017</mongo_uri>
 4. Edit other parameters as necessary. The other parameters would match those of a regular prolucid search.xml
 
-### To Run Search
+###  Run Search
 Download ProLuCIDCompil [here](http://fields.scripps.edu/prolucid_compil/download/prolucid_compil.jar).
 1. Run "java -Xmx10G -jar prolucid_compil.jar example.ms2 search.xml [num_threads]"
 	- search.xml - edit search.xml as described in "Configure Search Parameters"
 	- [num threads] - number of threads to assign to search; in general assigning more threads to search increased performance but increased strain on mongodb server and memory usage on local node. The optimum number of threads assigned per node would heavily depend on node specification, network configuration, and mongodb sharding configuration. For our 8 shard mongodb set up, I assigned 2 threads per node and had no more than 60 threads access the mongodb server.
 	- Example:
 		- java -Xmx10G -jar prolucid_compil.jar example.ms2 search.xml 4
+		
+### Running DTASelect
+* When running DTASelect, add "-noDB" option to DTASelect.params or command line arguments. When the fasta file reaches sizes greater than 1 GB, DTASelect runs very slowly when it attempts to load the fasta file.  "-noDB" stops DTASelect from reading database files, and allows the program run the rest of analysis without issue. 
 	
 	
 
