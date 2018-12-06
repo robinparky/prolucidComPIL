@@ -93,8 +93,9 @@ Download [build_compil](https://bitbucket.org/sulab/metaproteomics)
 1. Go to directory where build_compil is installed
 2. Update the blazmass.params if needed	
 3. run "create_compil path/to/fasta/file database_name database_name"
+	* the fasta file should not have any reverse proteins on it
 	* Example: 
-		* "create_compil ~/testFasta/*.fasta testDB testDB"
+		* "create_compil ~/testFasta/test.fasta testDB testDB"
 
 *ComPIL/MongoDB integration by [Sandip Chatterjee](http://www.scripps.edu/wolan) & [Greg Stupp](http://sulab.org/)*
 
