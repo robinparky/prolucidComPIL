@@ -111,7 +111,7 @@ Download sample search.xml [here](http://fields.scripps.edu/prolucid_compil/down
 3. Edit " <mongo_uri>\[insert database url]</mongo_uri>" and replace \[insert database url] with mongodb url
 	* Example:
 		* <mongo_uri>mongodb://localhost:27017</mongo_uri>
-4. Edit other parameters as necessary.
+4. Edit other parameters as necessary. The other parameters would match those of a regular prolucid search.xml
 
 ### To Run Search
 Download ProLuCIDCompil [here](http://fields.scripps.edu/prolucid_compil/download/prolucid_compil.jar).
