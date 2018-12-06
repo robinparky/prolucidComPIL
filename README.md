@@ -100,7 +100,7 @@ Download [build_compil](https://bitbucket.org/sulab/metaproteomics)
 *ComPIL/MongoDB integration by [Sandip Chatterjee](http://www.scripps.edu/wolan) & [Greg Stupp](http://sulab.org/)*
 
 ### Configure Search Parameters
-Download sample search.xml [here](http://fields.scripps.edu/prolucid_compil/download/prolucid_compil.jar).
+Download sample search.xml [here](http://fields.scripps.edu/prolucid_compil/download/search.xml).
 1. Edit " <database_name>\[database path]</database_name>" line and replace "[database path]" with path to fasta file
 	* Example:
 		* <database_name>/home/yateslab/project_data/prolucid_compil/2610search/example.fasta</database_name>
