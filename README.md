@@ -122,6 +122,7 @@ Download ProLuCIDCompil [here](http://fields.scripps.edu/prolucid_compil/downloa
 		- java -Xmx10G -jar prolucid_compil.jar example.ms2 search.xml 4
 		
 ### Running DTASelect
+* Download DTASelect [here](http://fields.scripps.edu/yates/wp/?page_id=17)
 * When running DTASelect, add "-noDB" option to DTASelect.params or command line arguments. When the fasta file reaches sizes greater than 1 GB, DTASelect runs very slowly when it attempts to load the fasta file.  "-noDB" stops DTASelect from reading database files, and allows the program run the rest of analysis without issue. 
 	
 	
